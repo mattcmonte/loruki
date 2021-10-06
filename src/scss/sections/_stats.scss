@@ -1,0 +1,18 @@
+@use './abstracts' as a;
+
+.stats {
+    padding-top: 6.25rem;
+    
+    &-paragraph {
+        max-width: 31.25rem;
+        margin: auto;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .stats .grid {
+        @include a.verticalize-grid;
+    }
+}

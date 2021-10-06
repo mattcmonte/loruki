@@ -1,0 +1,13 @@
+@use './variables' as v;
+
+%btn {
+    display: inline-block;
+    padding: .625em 1.875em;
+    cursor: pointer;
+    color: v.$white;
+    border: none;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}

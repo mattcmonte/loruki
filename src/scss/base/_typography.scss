@@ -1,0 +1,96 @@
+@use './abstracts' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+body {
+    font-family: a.$font-family;
+    color: a.$white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: a.$dark-grey;
+}
+
+h1,
+h2, 
+h3,
+h4 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+.page-title {
+    font-size: 3.5rem;
+}
+
+.showcase {
+    &-paragraph {
+        font-size: 1.4rem;
+    }
+
+    &-form input[type='text'],
+    &-form input[type='email'] {
+        font-size: 1rem;
+    }
+}
+
+.form-heading {
+    font-size: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.stats {
+    color: a.$dark-grey;
+    
+    &-heading {
+        font-size: 1.5rem;   
+    }
+
+    &-number {
+        font-size: 2.5rem;
+    }
+
+    &-label {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.cloud {
+    &-heading {
+        font-size: 3rem;
+    }
+
+    &-paragraph {
+        font-size: 1.3rem;
+    }
+}
+
+.languages {
+    color: a.$dark-grey;
+
+    &-heading {
+        font-size: 2rem;
+    }
+
+    &-name {
+        font-size: 1.25rem;
+    }
+}
+
+.footer {
+    &-link,
+    &-icon {
+        color: a.$white;
+    }
+}

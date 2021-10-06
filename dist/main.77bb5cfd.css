@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.btn, .btn-transparent {
+  display: inline-block;
+  padding: 0.625em 1.875em;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.btn:hover, .btn-transparent:hover {
+  transform: scale(0.98);
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.nav {
+  background-color: #0478ec;
+  color: white;
+}
+.nav .flex {
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: white;
+  padding: 0.6rem;
+  margin: 0 0.1rem;
+}
+.nav a:hover {
+  border-bottom: 0.1em white solid;
+}
+
+/* Mobile Screens */
+@media (max-width: 31em) {
+  .nav .flex {
+    flex-direction: column;
+  }
+  .nav ul {
+    padding: 0.2em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.btn {
+  background-color: #0478ec;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 0.0625em white solid;
+}
+
+.footer {
+  background-color: #002342;
+}
+.footer-icon {
+  margin: 0 0.625rem;
+}
+
+/* Tablets and smaller */
+@media (max-width: 48em) {
+  .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 2.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  color: #333333;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  margin: 0.625rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25em;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", "sans-serif";
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.page-title {
+  font-size: 3.5rem;
+}
+
+.showcase-paragraph {
+  font-size: 1.4rem;
+}
+.showcase-form input[type=text], .showcase-form input[type=email] {
+  font-size: 1rem;
+}
+
+.form-heading {
+  font-size: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.stats {
+  color: #333333;
+}
+.stats-heading {
+  font-size: 1.5rem;
+}
+.stats-number {
+  font-size: 2.5rem;
+}
+.stats-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cloud-heading {
+  font-size: 3rem;
+}
+.cloud-paragraph {
+  font-size: 1.3rem;
+}
+
+.languages {
+  color: #333333;
+}
+.languages-heading {
+  font-size: 2rem;
+}
+.languages-name {
+  font-size: 1.25rem;
+}
+
+.footer-link, .footer-icon {
+  color: white;
+}
+
+.showcase {
+  background-color: #0478ec;
+  position: relative;
+  /*
+  * For the neat slant effect on the homepage.
+  */
+}
+.showcase-paragraph {
+  margin: 1.25rem 0;
+}
+.showcase-form {
+  position: relative;
+  top: 3.75rem;
+  z-index: 1;
+  justify-self: flex-end;
+}
+.showcase-form .form-control {
+  margin: 1.875rem 0;
+}
+.showcase-form input[type=text], .showcase-form input[type=email] {
+  border: none;
+  border-bottom: 0.0625rem solid #b4becb;
+  padding: 0.1875rem;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+.showcase::before, .showcase::after {
+  content: "";
+  position: absolute;
+  height: 6.25rem;
+  bottom: -4.375rem;
+  right: 0rem;
+  left: 0rem;
+  background-color: white;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+.showcase .grid {
+  overflow: visible;
+}
+.showcase .card {
+  padding: 2.5rem;
+}
+
+/* Tablets and smaller */
+@media (max-width: 48em) {
+  .showcase .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase-text {
+    text-align: center;
+    margin: 2.5rem;
+  }
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+}
+.stats {
+  padding-top: 6.25rem;
+}
+.stats-paragraph {
+  max-width: 31.25rem;
+  margin: auto;
+}
+
+/* Tablets and smaller */
+@media (max-width: 48em) {
+  .stats .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.cli .grid > *:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+
+/* Tablets and smaller */
+@media (max-width: 48em) {
+  .cli .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.cloud {
+  background-color: #0478ec;
+}
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Tablets and smaller */
+@media (max-width: 48em) {
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.languages-name {
+  margin-bottom: 1rem;
+}
+.languages .flex {
+  flex-wrap: wrap;
+}
+.languages .card {
+  transition: transform 0.2s ease-in;
+}
+.languages .card:hover {
+  transform: translateY(-0.9375rem);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  margin: 0.4rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -1,0 +1,19 @@
+@use './abstracts' as a;
+
+.cloud {
+    background-color: a.$primary-color;
+
+    .grid {
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .cloud {
+        .grid  {
+            @include a.verticalize-grid;
+        }
+    }
+}

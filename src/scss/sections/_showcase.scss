@@ -1,0 +1,79 @@
+@use './abstracts' as a;
+
+.showcase {
+    background-color: a.$primary-color;
+    position: relative;
+ 
+    &-paragraph {
+        margin: 1.25rem 0;        
+    }
+
+    &-form {
+        position: relative;
+        top: 3.75rem;
+        z-index: 1;
+        justify-self: flex-end;
+    }
+    
+    &-form .form-control {
+        margin: 1.875rem 0;
+    }
+    
+    &-form input[type='text'],
+    &-form input[type='email'] {
+        border: none;
+        border-bottom: .0625rem solid hsl(214, 18%, 75%);
+        padding: .1875rem; 
+    }
+    
+    &-form input:focus {
+        outline: none;
+    }
+    
+    /*
+    * For the neat slant effect on the homepage.
+    */
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        height: 6.25rem;
+        bottom: -4.375rem;
+        right: 0rem;
+        left: 0rem;
+        background-color: a.$white;
+        transform: skewY(-3deg);
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg); 
+    }
+
+    .grid {
+        overflow: visible;
+    }
+    
+    .card {
+        padding: 2.5rem;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .showcase {
+        .grid  {
+            @include a.verticalize-grid;
+        }
+
+        &-text {
+            text-align: center;
+            margin: 2.5rem;
+            
+        }
+            
+        &-form {
+            justify-self: center;
+            margin: auto;
+        }
+    }
+}

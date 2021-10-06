@@ -1,0 +1,12 @@
+@use './abstracts' as *;
+
+.btn {
+    @extend %btn;
+    background-color: $primary-color;
+}
+
+.btn-transparent {
+    @extend %btn;
+    background-color: transparent;
+    border: .0625em $white solid;
+}

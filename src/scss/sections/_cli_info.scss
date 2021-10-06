@@ -1,0 +1,28 @@
+@use './abstracts' as a;
+
+.cli {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid > *:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .cli {
+        .grid {
+            @include a.verticalize-grid;
+        }
+
+        .grid > *:first-child {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use './abstracts' as a;
+@use './components';
+@use './layouts';
+@use './base';
+@use './sections';
+
+
+ul {
+    list-style-type: none;
+}
+
+h1, 
+h2 {
+    margin: .4rem 0;
+}
+
+img {
+    width: 100%;
+}

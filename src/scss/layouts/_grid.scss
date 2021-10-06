@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}

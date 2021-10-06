@@ -1,0 +1,39 @@
+@use './abstracts' as a;
+
+.nav {
+    background-color: a.$primary-color;
+    color: a.$white;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        color: a.$white;
+        padding: .6rem;
+        margin: 0 .1rem;
+    }
+
+    a:hover {
+        border-bottom: .1em a.$white solid;
+    }
+}
+
+/* Mobile Screens */
+
+@media(max-width: 31em) {
+    .nav {
+        .flex {
+            flex-direction: column;
+        }
+        
+        ul {
+            padding: .2em;
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+}

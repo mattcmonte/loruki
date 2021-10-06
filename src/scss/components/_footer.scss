@@ -1,0 +1,17 @@
+@use './abstracts' as a;
+
+.footer {
+    background-color: a.$navy-blue;
+
+    &-icon {
+        margin: 0 .625rem;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .footer .grid {
+        @include a.verticalize-grid;
+    }
+}

@@ -1,0 +1,17 @@
+.languages {
+    &-name {
+        margin-bottom: 1rem;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        transition: transform 0.2s ease-in;
+    }
+
+    .card:hover {
+        transform: translateY(-0.9375rem);
+    }
+}
