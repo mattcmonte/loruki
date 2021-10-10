@@ -11,3 +11,11 @@
         transform: scale(.98);
     }
 }
+
+%msg {
+    display: none;
+    color: v.$white;
+    font-weight: bold;
+    border-radius: .625rem;
+    padding: 1rem;
+}

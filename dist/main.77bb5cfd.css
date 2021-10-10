@@ -10,6 +10,14 @@
   transform: scale(0.98);
 }
 
+.success-msg {
+  display: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -142,6 +150,13 @@
     grid-template-rows: 1fr;
   }
 }
+.success-msg {
+  background-color: #5cb75c;
+}
+.success-msg i {
+  margin-right: 0.625rem;
+}
+
 .container {
   max-width: 68.75rem;
   margin: 0 auto;

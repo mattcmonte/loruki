@@ -1,0 +1,10 @@
+@use './abstracts' as *;
+
+.success-msg {
+    @extend %msg; 
+    background-color: $success-color;
+
+    i {
+        margin-right: .625rem;
+    }
+}
