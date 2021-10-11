@@ -11,7 +11,9 @@
 /* Tablets and smaller */
 
 @media(max-width: 48em) {
-    .footer .grid {
-        @include a.verticalize-grid;
+    .footer {
+        .grid {
+            @include a.verticalize-grid;
+        }
     }
 }

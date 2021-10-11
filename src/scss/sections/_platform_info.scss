@@ -1,0 +1,28 @@
+@use '../abstracts' as a;
+
+.platform-info {    
+    &-heading {
+        margin-bottom: .7rem;
+    }
+
+    &-img {
+        width: 60%;
+        justify-self: flex-end;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .platform-info {
+        text-align: center;
+        
+        &-img {
+            justify-self: center;
+        }
+
+        .grid {
+            @include a.verticalize-grid;
+        }
+    }
+}

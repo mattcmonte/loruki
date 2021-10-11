@@ -12,7 +12,9 @@
 /* Tablets and smaller */
 
 @media(max-width: 48em) {
-    .stats .grid {
-        @include a.verticalize-grid;
+    .stats {
+        .grid {
+            @include a.verticalize-grid;
+        }
     }
 }

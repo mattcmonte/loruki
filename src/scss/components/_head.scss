@@ -1,0 +1,26 @@
+@use '../abstracts' as a;
+
+.head {
+    @include a.set-primary-bg;
+
+    &-img {
+        width: 12.5rem;
+        justify-self: flex-end;
+    }
+}
+
+/* Tablets and smaller */
+
+@media(max-width: 48em) {
+    .head {
+        text-align: center;
+        
+        &-img {
+            justify-self: center;
+        }
+
+        .grid {
+            @include a.verticalize-grid;
+        }
+    }
+}

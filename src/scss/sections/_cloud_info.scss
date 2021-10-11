@@ -1,7 +1,7 @@
 @use './abstracts' as a;
 
 .cloud {
-    background-color: a.$primary-color;
+    @include a.set-primary-bg;
 
     .grid {
         grid-template-columns: 4fr 3fr;

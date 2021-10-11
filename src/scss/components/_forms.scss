@@ -1,0 +1,14 @@
+form .form-control {
+    margin: 1.875rem 0;
+}
+
+form input[type='text'],
+form input[type='email'] {
+    border: none;
+    border-bottom: .0625rem solid hsl(214, 18%, 75%);
+    padding: .1875rem; 
+}
+
+form input:focus {
+    outline: none;
+}

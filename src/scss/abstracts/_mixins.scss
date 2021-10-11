@@ -1,4 +1,11 @@
+@use './variables' as v;
+
 @mixin verticalize-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+}
+
+@mixin set-primary-bg {
+    background-color: v.$primary-color;
+    color: v.$white;
 }

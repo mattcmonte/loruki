@@ -15,21 +15,6 @@
         justify-self: flex-end;
     }
     
-    &-form .form-control {
-        margin: 1.875rem 0;
-    }
-    
-    &-form input[type='text'],
-    &-form input[type='email'] {
-        border: none;
-        border-bottom: .0625rem solid hsl(214, 18%, 75%);
-        padding: .1875rem; 
-    }
-    
-    &-form input:focus {
-        outline: none;
-    }
-    
     /*
     * For the neat slant effect on the homepage.
     */
@@ -51,29 +36,25 @@
     .grid {
         overflow: visible;
     }
-    
-    .card {
-        padding: 2.5rem;
-    }
 }
 
 /* Tablets and smaller */
 
 @media(max-width: 48em) {
     .showcase {
-        .grid  {
-            @include a.verticalize-grid;
-        }
-
         &-text {
             text-align: center;
             margin: 2.5rem;
             
         }
-            
+        
         &-form {
             justify-self: center;
             margin: auto;
+        }
+
+        .grid  {
+            @include a.verticalize-grid;
         }
     }
 }
